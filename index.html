@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 - 古风雅致版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "思源宋体", "SimSun", serif;
+            background-color: #f7f3e9;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50 L50 100 L100 50 L50 0 L0 50 Z' fill='%23e8dfc4' fill-opacity='0.2'/%3E%3C/svg%3E");
+            color: #333;颜色：#333;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        .header::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 2px;
+            background-color: #c2a661;
+            margin: 20px auto;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 2.2rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        .motto {
+            font-size: 1.1rem;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+        .profile, .hobbies, .skills {.个人简介, .兴趣爱好, .技能{
+            flex: 1;弹性: 1;
+            min-width: 300px;最小-宽度: 300像素x;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 24px;
+            background-color: #c2a661;
+            border-radius: 4px;
+        }
+        .profile-text, .hobby-list, .skill-list {
+            font-size: 1rem;
+            color: #4b5563;
+        }
+        .hobby-list, .skill-list {
+            list-style: none;
+        }
+        .hobby-list li, .skill-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .hobby-list li::before, .skill-list li::before {
+            content: "•";
+            color: #c2a661;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 20px 0;
+            color: #6b7280;
+            font-size: 0.9rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        @media (max-width: 768px) {
+            .name {
+                font-size: 1.8rem;
+            }
+            .avatar {
+                width: 150px;
+                height: 150px;
+            }
+            .content {
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div 部门class="header">
+            <img src="photo-2.jpg" alt="个人头像" class="avatar">
+            <h1 class="name">清风客</h1>
+            <p class="motto">心藏丘壑，笔绘山河</p>
+        </div部门>
+        <div 部门class="content">
+            <div 部门class="profile">
+                <h2 class="section-title">关于我</h2>
+                <p class="profile-text">边框-半径:50%;
+                    生于江南水乡，自幼喜爱笔墨丹青与传统文化。沉迷东方美学之韵，尤爱古风雅韵与江湖意气。
+                    闲暇时醉心《我的世界》服务器搭建，以代码筑梦，在方块世界中复刻东方意境；
+                    亦好读武侠小说，品茗听雨，于字里行间追寻侠义豪情。
+                    信奉"知行合一"，愿以赤诚之心，赴岁月之约，在热爱的领域步履不停。底部边距：20px;
+                </p>
+            </div>
+            <div 部门class="hobbies">
+                <h2 class="section-title">志趣所向</h2>颜色：#2d3748;
+                <ul class底部边距:10px;班级="hobby-list"“爱好列表”>
+                    <li李李李>古风创作与东方美学研究</li李李>
+                    <li李李李>《我的世界》服务器搭建与指令开发</li李李><li李李>我的世界服务器搭建与指令开发</li李李>
+                    <li李李李>武侠小说阅读与文学创作</li李李><li>李李李>武侠小说阅读与文学创作</li李李><li>李李李>武侠小说阅读与文学创作</li李李><li>李李李>武侠小说阅读与文学创作</li李李>
+                    <li李李李>传统茶文化与中式生活美学</li李李><li>李李李>传统茶文化与中式生活美学</li李李><li>李李李>传统茶文化与中式生活美学</li李李><li>李李李>传统茶文化与中式生活美学</li李李>
+                    <li李李>书法、国画等传统艺术修习</li李李><li李李>书法、国画等传统艺术修养</li李李>
+                </ul>
+            </div>
+            <div 部门class班级="skills">
+                <h2 class班级班级="section-title">所长之物</h2>                <h2class班级="section-title">所长之物</h2>章节-title">所长之物</h2>所长之物h2>
+                <ul class班级班级="skill-list">flex-wrap:wrap;
+                    <li李李李>服务器管理与游戏指令开发</li李李><李李李>服务器管理与游戏指令开发
+                    <li李李李>文案创作与古风内容策划</li李李>
+                    <li李李李>基础网页设计与前端开发</li李李>
+                    <li李李李>传统艺术鉴赏与实践</li李李>
+                    <li李李李>跨领域创意项目整合</li李李>
+                </ul>
+            </div部门>
+        </div部门>
+        <div 部门class班级="footer页脚"“页脚”“页脚”>颜色：#2d3748;“页脚”“页脚”>颜色：#2d3748;页脚“页脚”“页脚”>颜色：#2d3748;“页脚”“页脚”>颜色：#2d3748;
+            <p>© 2024 清风客 | 心有丘壑 不负韶华</p>底边距:25p下边距:25p下边距：25px;
+        </div部门>
+    </div部门>
+</body>
+</html>
